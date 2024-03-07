@@ -1,4 +1,4 @@
 import re
 x = input()
-words = re.findall(r'[A-Z][^A-Z]*', x)
+words = re.split(r"(?=[A-Z])", x)
 print(words)
